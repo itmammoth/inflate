@@ -10,7 +10,7 @@ uv pip install -r requirements.txt
 source ./venv/bin/active
 ```
 
-### N週移動平均値
+## N週移動平均値
 
 ```bash
 # 指定銘柄のN週移動平均値を出力する
