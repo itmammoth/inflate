@@ -50,6 +50,8 @@ def main() -> None:
 
     print(f"今週の【{ticker_code}:{ticker.info['shortName']}】")
     print(df.tail(1))
+    print("終値")
+    print(df.tail(1)["Close"].iloc[0])
 
     print(f"{period_weeks}週移動平均値")
     ma = df["Close"].rolling(window=period_weeks).mean().iloc[-1]
